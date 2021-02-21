@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>Taskmaster</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://taskmaster.tv/sites/all/themes/taskmaster/images/letter-seal.png" width="45"
+                    height="45" alt="" loading="lazy">
+                <span class="ml-2">Task master</span>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 pl-1 m-1">
+                    <form onsubmit="app.taskController.create(event)">
+                        <class class="form-group">
+                            <input type="text" name="title" placeholder="Enter Task" maxlength="15" minlength="3">
+                            <button class="btn-dark btn-primary" type="submit">Create Task</button>
+                            <label for='colorPicker'> Colorpicker: </label>
+                            <input type="color" name="red" id="color" value=#fc0303></input>
+                            <!-- <input type="color" name="blue" id="Tcolor" value=#0040ff> -->
+                            <!-- <input type="color" name="purple" id="color-p" value=#8000ff>
+                            <input type="color" name="green" id="color-g" value=#009933>
+                            <input type="color" name="pink" id="color-p" value=#ff3399> -->
+                        </class>
+
+                </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="row" id="task"></div>
+
+        <div> <button class="btn btn-primary" type="submit" value="Submit" checked required>Submit</button> </div>
+
+        </div>
+    </main>
+    <footer class="container-fluid bg-dark text-light">
+        <div class="row text-center">
+            <div class="col">
+                <p><small>Made by Kaleb McElyea</small></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
