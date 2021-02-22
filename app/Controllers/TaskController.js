@@ -26,7 +26,7 @@ export default class TaskController{
         let newTask = {
             title: form.title.value,
             color: form.color.value,
-            Tcolor: form.Tcolor.value
+            
         }
         taskService.create(newTask) 
         
